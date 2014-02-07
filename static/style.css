@@ -1,4 +1,5 @@
 /* BASIC RESET */
+<<<<<<< HEAD
 *,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input{margin:0; padding:0;}
 
 /* HTML ELEMENTS */
@@ -158,19 +159,65 @@ nav {
     padding-top: 35%;
     overflow: hidden;
     margin-top: 45px;
+=======
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input{margin:0; padding:0;}
+
+/* HTML ELEMENTS */
+body { background-color:#0389d8; font:62.5% Arial, 'Lucida Grande', sans-serif; }
+
+form { margin:auto; width:960px;}
+
+/* HEADER */
+#header { height:600px; }
+
+/* NAVIGATION */
+#nav-outer { height:110px; padding-top:11px; top:24px; background:white; }
+#navigation { height:100px; width:960px; margin:0 auto; background-image:url("images/HeaderImage.png"); background-position:top left; background-repeat:no-repeat; }
+#navigation img {height: 90px;}
+
+/* MENU */
+#menu { position:relative; top:57px; float:right;}
+#menu ul { list-style:none; }
+#menu ul li { display:inline; font-size:25px; margin-left:10px; }
+#menu:last-child {color:white;}
+#donatebtn { background-color:#0389d8;  color:white !important; font-size:35px; padding: 10px; position:relative; /*top:-17px !important;*/}
+#donatebtn:hover { background-color:white !important; color:#0389d8 !important; font-size:35px; padding: 10px;}
+#menu ul li a { color:#8B8E90; text-decoration:none; font-weight:bold; margin-right:20px; }
+#menu ul li a:hover { background-color:#0389d8; color: white;}
+
+
+
+/* HEADER HAVIGATION */
+#headernav-outer { position:relative; top:400px; margin:0 auto; width:960px; }
+#headernav { padding-left:864px; }
+
+
+.fader{
+    position: relative;
+    padding-top: 60%;
+    overflow: hidden;
+>>>>>>> 3f3c85d304b90a006ff4d5a21a8544e365d53617
 } 
  
 .fader .slide{
     position: absolute;
     width: 100%;
+<<<<<<< HEAD
     height: 340px;
+=======
+    height: 100%;
+>>>>>>> 3f3c85d304b90a006ff4d5a21a8544e365d53617
     top: 0;
     z-index: 1;
     opacity: 0;
 }
  
 .fader img.slide{
+<<<<<<< HEAD
     height: 340px;
+=======
+    height: auto;
+>>>>>>> 3f3c85d304b90a006ff4d5a21a8544e365d53617
 }
 
 .fader .prev,
@@ -230,6 +277,7 @@ nav {
 }
 
 /* CONTENT */
+<<<<<<< HEAD
 #content { 
   color:#575757; 
   padding-top:30px;
@@ -299,3 +347,10 @@ nav {
 #footer, .push {
     height: 75px;
 }
+=======
+#content { color:#575757; background-color:white; }
+#content h2 { padding:10px 20px; margin: 0 auto; width:960px; font-size: 30px; color:rgb(139, 142, 144); }
+#content p { padding:10px 20px; font-size:20px; width:960px; margin:0 auto; color:rgb(139, 142, 144); }
+#content p a { text-decoration:none; color:#0389d8; }
+#content p a:hover { text-decoration:underline; color:#7F000C; }
+>>>>>>> 3f3c85d304b90a006ff4d5a21a8544e365d53617
