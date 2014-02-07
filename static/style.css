@@ -1,5 +1,5 @@
 /* BASIC RESET */
-*,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input{margin:0; padding:0;}
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input{margin:0; padding:0;}
 
 /* HTML ELEMENTS */
 html, body {
@@ -14,7 +14,6 @@ form { margin:auto; width:960px;}
 
 /* NAVIGATION */
 #nav-outer { 
-  overflow-hidden; 
   top:24px; 
   background:white; 
 }
@@ -23,7 +22,9 @@ form { margin:auto; width:960px;}
   height: 120px; 
   margin-left:20px; 
   padding-top:10px; 
-  padding-bottom:10px; }
+  padding-bottom:10px; 
+}
+
 #navigation { 
   height:100px; 
   width:960px; 
@@ -64,6 +65,9 @@ form { margin:auto; width:960px;}
 }
 
 /* MENU */
+#donatebtn {
+  border-right: none !important;
+}
 
 #donatebtn a { 
   background-color:#0389d8 !important;  /*How do I accomplish all this without the "!important"?*/
@@ -71,10 +75,6 @@ form { margin:auto; width:960px;}
   padding:4px; 
   padding-left:20px; 
   padding-right:20px;
-}
-
-li#donatebtn {
-  border-right: none !important;
 }
 
 #donatebtn:hover a { 
