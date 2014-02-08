@@ -5,7 +5,7 @@ ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input{margin
 html, body {
   height:100%;
 }
-body { font-family:Helvetica Neue Bold, sans-serif; width:100%; max-width:960px; margin:0 auto;}
+body { font-family:Helvetica Neue Bold, sans-serif; width:100%; margin:0 auto;}
 form { margin:auto; width:960px;}
 
 /* HEADER */
@@ -243,27 +243,37 @@ nav {
   margin: 0 auto -75px; 
 }
 
-#content h2 { 
+#content h2, #content_pages h2 { 
   padding-left:30px; 
   margin: 0 auto; 
   font-size: 30px; 
   color:rgb(139, 142, 144); 
 }
-#content p { 
+#content p, #content_pages p { 
   padding:10px 30px; 
   font-size:20px; 
   margin:0 auto; 
   color:rgb(139, 142, 144); 
 }
-#content p a { 
+#content p a, #content_pages p a { 
   text-decoration:none; 
   color:#0389d8; 
 }
-#content p a:hover { 
+#content p a:hover, 
+#content_pages p a:hover { 
   text-decoration:underline; 
   color:#7F000C; 
 }
 
+#content_pages { 
+  color:#575757; 
+  padding-top:50px;
+  background-color:white;   
+  min-height: 320px;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -75px; 
+}
 
 /*FOOTER*/
 #legalInformation{
