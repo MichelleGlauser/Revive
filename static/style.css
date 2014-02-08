@@ -65,8 +65,10 @@ form { margin:auto; width:960px;}
 }
 
 /* MENU */
+
 #donatebtn {
   border-right: none !important;
+  float:right !important;
 }
 
 #donatebtn a { 
@@ -112,7 +114,7 @@ form { margin:auto; width:960px;}
 #navbar li a {
   display: block;
   /*font-weight: bold; pushes donate button down?*/
-  padding: 10px 50px;
+  padding: 10px 49px;
   background-color: #440F7F;
   color: #fff;
   text-decoration: none; 
