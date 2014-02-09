@@ -1,16 +1,21 @@
 /* BASIC RESET */
-ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input{margin:0; padding:0;}
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input {margin:0; padding:0; text-decoration:none;}
 
 /* HTML ELEMENTS */
 html, body {
   height:100%;
 }
+
+a {
+  text-decoration:none;
+}
+
 body { font-family:Helvetica Neue Bold, sans-serif; width:100%; margin:0 auto;}
 form { margin:auto; width:960px;}
 
 /* HEADER */
 #header { height:160px; }
-#outerContainer { margin:0 auto; width:961px;}
+#outerContainer { margin:0 auto; width:960px;}
 
 /* NAVIGATION */
 #nav-outer { 
@@ -21,8 +26,8 @@ form { margin:auto; width:960px;}
   float: left; 
   height: 120px; 
   margin-left:20px; 
-  padding-top:10px; 
-  padding-bottom:10px; 
+  padding-top:20px; 
+  padding-bottom:0px; 
 }
 
 #navigation { 
@@ -59,6 +64,7 @@ form { margin:auto; width:960px;}
   margin-top:20px; 
   size:120%;
 }
+
 #socialMedia img { 
   margin-left:10px; 
   width:20px;
@@ -84,9 +90,13 @@ form { margin:auto; width:960px;}
   color:#0389d8 !important; 
 }
 
+#donatebtn form {
+  display:none;
+}
+
 #nav {
+  clear:both;
   width:100%;
-  margin:20px 0;
   position:relative;
   z-index:10;
 }
@@ -162,7 +172,7 @@ form { margin:auto; width:960px;}
     position: relative;
     padding-top: 35%;
     overflow: hidden;
-    margin-top: 45px;
+    margin-top: 33px;
 } 
  
 .fader .slide{
@@ -280,6 +290,7 @@ form { margin:auto; width:960px;}
 /*FOOTER*/
 #legalInformation{
   width: 960px;
+  float:right;
   margin: 0 auto 20px auto;
   text-align: center;
   color: #7490A3;
@@ -291,6 +302,9 @@ form { margin:auto; width:960px;}
   padding:10px 0 10px 0;
 }
 
+#paypalbtn {
+  margin-left:30px;
+}
 
 .horizontal.nav {
   padding-top:10px;
@@ -299,6 +313,7 @@ form { margin:auto; width:960px;}
 .horizontal.nav li{
   list-style-type: none;
   display: inline;
+  font-size:12px;
 }
 
 .horizontal.nav li a {

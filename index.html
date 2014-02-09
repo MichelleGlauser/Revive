@@ -15,18 +15,31 @@
 <div id="outerContainer">
 <div id="header">
   <div id="nav-outer" class="transparent">
-    <img id="logo" src="static/images/ReviveLogo.png"/>
+    <div id="logo">
+    	<a href="http://operationrevive.org" target="_blank" height="20px">	
+    		<img src="static/images/ReviveLogo.png" alt="Operation Revive logo">
+    	</a> 
+    </div>
     <p id="tagline">Bringing healthcare into the slums</p>
     <p id="tagline1"> one backpack at a time.</p>
     <div id="socialMedia">
-      <img src="static/images/twitter.png"/>
-      <img src="static/images/facebook.png"/>
-      <img src="static/images/linkedin.png"/>
-      <img src="static/images/SSG.png"/>
+      <a href="https://twitter.com/OperationRevive">
+      	<img alt="Operation Revive Twitter" src="static/images/twitter.png"/>
+      </a>
+      <a href="https://www.facebook.com/oeprationrevive">
+      	<img alt="Operation Revive Facebook" src="static/images/facebook.png"/>
+      </a>
+      <a href="#">
+      	<img src="static/images/linkedin.png"/>
+      </a>
+      <a href="#">
+      	<img src="static/images/SSG.png"/>
+      </a>
     </div>
       <div id="nav">
          <ul id="navbar">
-         	<li><a href="http://operationrevive.org">Home</a>
+         	<li><a 
+         	href="http://operationrevive.org">Home</a>
             <li><a href="aboutus.html">About us</a>
                <ul>
                   <li><a href="#">Who we are</a></li>
@@ -51,10 +64,10 @@
             <li><a href="#">Contribute</a>
                <ul>
                   <li><a href="#">Cooperate with us</a></li>
-                  <li><a href="#">Donate</a></li>
+                  <li><a href="https://www.paypal.com/uk/cgi-bin/webscr?cmd=_flow&SESSION=cmrj5yCyQx2668V-wuHu7yN0LUZ84zIVjXAE5QjBfNJjTbdm42jPZs5UDJe&dispatch=5885d80a13c0db1f8e263663d3faee8d7ff5e1e81f2ed97dd1e90bd72966c40c" target="_blank">Donate</a></li>
                </ul>
             </li>
-            <li id="donatebtn"><a href="#">Donate</a>
+            <li id="donatebtn"><a href="https://www.paypal.com/uk/cgi-bin/webscr?cmd=_flow&SESSION=cmrj5yCyQx2668V-wuHu7yN0LUZ84zIVjXAE5QjBfNJjTbdm42jPZs5UDJe&dispatch=5885d80a13c0db1f8e263663d3faee8d7ff5e1e81f2ed97dd1e90bd72966c40c" target="_blank">Donate</a>
                <ul class="last">
                </ul>
             </li>
@@ -90,23 +103,15 @@ Additionally, core parts of the program involve educational outreach and employm
 <!--  <p>&nbsp;</p> -->
   <h2><a name="aboutus"/>About us</h2>
   <p>Revive was founded in the fall of 2013 by five Hult International Business School MBA students from North America, India, Europe, and Asia. The team brings together professional backgrounds in engineering, marketing and communications, medical devices, and entrepreneurship.</p>
-
-<!-- <input type="image" src="http://i191.photobucket.com/albums/z72/MichemilyG/ScreenShot2014-01-18at111359PM_zpsea63d904.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form> -->
-<!--  <h2><a name="donate"/> --><!-- Donate -->
-<!--  <a href="http://s191.photobucket.com/user/MichemilyG/media/ScreenShot2014-01-18at111359PM_zpsea63d904.png.html" target="_blank"><img src="http://i191.photobucket.com/albums/z72/MichemilyG/ScreenShot2014-01-18at111359PM_zpsea63d904.png" border="0" alt="Revive Donate Button photo ScreenShot2014-01-18at111359PM_zpsea63d904.png"/></a> -->
-<!--  </h2> -->
-<!--  <p>To donate, please click on the button below: --></br>
-<!-- <p>
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+</br>
+<p>
+  <form id="paypalbtn" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
 <input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<input type="hidden" name="hosted_button_id" value="U6TAHXM96AU5G">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG_global.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
-</p> -->
+</p>
 <!--  <p>&nbsp;</p> -->
 <div class="push"></div>
 </div>
