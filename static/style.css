@@ -51,9 +51,9 @@ form { margin:auto; width:960px;}
 }
 #tagline1 { 
   float:left; 
-  font-size:24px; 
+  /*font-size:24px; */
   margin-left:10px; 
-  font-family:Futura, sans-serif; 
+  /*font-family:Futura, sans-serif; */
   position:relative; 
   top:65px; 
   right:240px;
