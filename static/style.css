@@ -41,28 +41,11 @@ form { margin:auto; width:960px;}
   height: 90px; 
   float:left;
 }
-#tagline { 
-  float:left; 
-  font-size:15px; 
-  margin-left:10px; 
-  font-family:Futura, sans-serif; 
-  position:relative; 
-  top:44px;
-}
-#tagline1 { 
-  float:left; 
-  /*font-size:24px; */
-  margin-left:10px; 
-  /*font-family:Futura, sans-serif; */
-  position:relative; 
-  top:65px; 
-  right:240px;
-}
+
 #socialMedia { 
   float: right; 
-  margin-right: 35px; 
-  margin-top:20px; 
-  size:120%;
+  margin-right: 40px; 
+  margin-top:30px; 
 }
 
 #socialMedia img { 
@@ -70,29 +53,28 @@ form { margin:auto; width:960px;}
   width:20px;
 }
 
+#tagline { 
+  color: rgb(139, 142, 144);
+  letter-spacing:1px;
+  clear:right;
+  float:right; 
+  font-size:25px; 
+  margin-right:40px; 
+  font-family:Futura, sans-serif; 
+  position:relative; 
+  top:5px;
+}
+
+#tagline1 { 
+  letter-spacing:3px;
+  color:rgb(139, 142, 144);
+  margin-left:10px; 
+  position:relative; 
+  top:90px; 
+  left:463px;
+}
+
 /* MENU */
-
-#donatebtn {
-  border-right: none !important;
-  float:right !important;
-}
-
-#donatebtn a { 
-  background-color:#0389d8 !important;  /*How do I accomplish all this without the "!important"?*/
-  color:white !important; 
-  padding:4px; 
-  padding-left:20px; 
-  padding-right:20px;
-}
-
-#donatebtn:hover a { 
-  background-color:#d3d3d3 !important; 
-  color:#0389d8 !important; 
-}
-
-#donatebtn form {
-  display:none;
-}
 
 #nav {
   clear:both;
@@ -166,6 +148,27 @@ form { margin:auto; width:960px;}
   padding: 10px 0 10px 20px;
 }
 
+#donatebtn {
+  border-right: none !important;
+  float:right !important;
+}
+
+#donatebtn a { 
+  background-color:#0389d8 !important;  /*How do I accomplish all this without the "!important"?*/
+  color:white !important; 
+  padding:4px; 
+  padding-left:20px; 
+  padding-right:20px;
+}
+
+#donatebtn:hover a { 
+  background-color:#d3d3d3 !important; 
+  color:#0389d8 !important; 
+}
+
+#donatebtn form {
+  display:none;
+}
 
 /* IMAGE SLIDER */
 .fader{
