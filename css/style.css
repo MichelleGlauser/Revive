@@ -1,3 +1,7 @@
+---
+title: CSS stylesheet
+---
+
 /* BASIC RESET */
 ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input {margin:0; padding:0; text-decoration:none;}
 
@@ -19,6 +23,10 @@ form { margin:auto; width:960px;}
   margin:0 auto; 
   width:960px;
   overflow:hidden;
+}
+
+#header {
+  padding-bottom:20px;
 }
 
 /* NAVIGATION */
@@ -85,29 +93,35 @@ form { margin:auto; width:960px;}
   width:100%;
   position:relative;
   z-index:10;
+  min-width:930px;
 }
 
-#navbar {
+.navbar {
   display:table;
   clear:both;
   margin: 0 auto;
   padding: 0;
   height: 1em; 
+  width:100%;
+}
+
+.navbar ul li {
+  border-right:none;
+}
+
+.navbar ul li:hover > ul {
+  width:100%;
   overflow:hidden;
-  width:100%;
 }
 
-#navbar ul {
-  width:100%;
-}
-
-#navbar li {
+.navbar li {
   list-style: none;
   float: left; 
   border-right:1px white solid;
+  position:relative;
 }
 
-#navbar li a {
+.navbar li a {
   display: block;
   /*font-weight: bold; pushes donate button down?*/
   padding: 10px 49px;
@@ -117,57 +131,55 @@ form { margin:auto; width:960px;}
   z-index: 9999;
 }
 
-#navbar li ul {
+.navbar li ul {
   display: none; 
-  width: 10em; /* Width for Opera */
   background-color:  #d3d3d3;
+  left:0;
+  right:0;
 }
 
-#navbar li li a {
-  padding: 10px 0 10px 20px;
+.navbar li li a {
+  padding: 10px 10px 10px 20px;
   background-color: #d3d3d3;
   color:#0389d8 !important;
+  line-height:25px;
 }
 
-#navbar li:hover ul {
+.navbar li:hover ul {
   display: block;
   position: absolute;
   margin: 0;
   padding: 0; 
 }
 
-#navbar li:hover li {
+.navbar li:hover li {
   float: none; 
 }
 
-#navbar li:hover li a {
+.navbar li:hover li a {
   background-color: #d3d3d3;
   border-right: none;
   border-bottom: 1px solid #fff;
-  color: #000; 
 }
 
-#navbar li li a:hover {
+.navbar li li a:hover {
   background-color: #8db3ff; 
-  padding: 10px 0 10px 20px;
+  padding: 10px 10px 10px 20px;
 }
 
 #donatebtn {
-  border-right: none !important;
-  float:right !important;
+  border-right: none;
+  float:right;
 }
 
 #donatebtn a { 
-  background-color:#0389d8 !important;  /*How do I accomplish all this without the "!important"?*/
-  color:white !important; 
-  padding:4px; 
-  padding-left:20px; 
-  padding-right:20px;
+  background-color:#0389d8;  /*How do I accomplish all this without the "!important"?*/
+  color:white; 
 }
 
 #donatebtn:hover a { 
-  background-color:#d3d3d3 !important; 
-  color:#0389d8 !important; 
+  background-color:#d3d3d3; 
+  color:#0389d8; 
 }
 
 #donatebtn form {
@@ -179,7 +191,6 @@ form { margin:auto; width:960px;}
     position: relative;
     padding-top: 35%;
     overflow: hidden;
-    margin-top: 33px;
 } 
  
 .fader .slide{
@@ -255,17 +266,19 @@ form { margin:auto; width:960px;}
 #content { 
   color:#575757; 
   padding-top:30px;
+  padding-bottom:30px;
   background-color:white;   
-  min-height: 100%;
+  min-height: 320px;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -75px; 
+  margin: 0 auto 5px; 
 }
 
 #content h2, #content_pages h2 { 
   padding-left:30px; 
+  padding-bottom:10px;
   margin: 0 auto; 
-  font-size: 30px; 
+  font-size: 23px; 
   color:rgb(139, 142, 144); 
 }
 #content p, #content_pages p { 
@@ -281,7 +294,11 @@ form { margin:auto; width:960px;}
 #content p a:hover, 
 #content_pages p a:hover { 
   text-decoration:underline; 
-  color:#7F000C; 
+  color:#440F7F; 
+}
+
+#content img {
+  min-height: 30px;
 }
 
 #content_pages { 
@@ -295,6 +312,20 @@ form { margin:auto; width:960px;}
 }
 
 /*FOOTER*/
+#footer {
+  background-color:#440F7F;
+  }
+
+#footer, .push {
+    height: 75px;
+}
+
+#footer_left {
+  float:left;
+  padding-top:15px;
+  padding-left:65px;
+}
+
 #legalInformation{
   width: 960px;
   float:right;
@@ -327,12 +358,4 @@ form { margin:auto; width:960px;}
   color:white; 
   text-decoration:none; 
   font-weight:bold;
-}
-
-#footer {
-  background-color:#440F7F;
-  }
-
-#footer, .push {
-    height: 75px;
 }
