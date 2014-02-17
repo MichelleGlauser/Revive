@@ -1,6 +1,6 @@
 ---
 title: Index.md
-layout: home
+layout: default
 ---
 
 <div id="Fader" class="fader">
