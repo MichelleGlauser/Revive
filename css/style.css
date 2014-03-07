@@ -175,6 +175,7 @@ form { margin:auto; width:960px;}
 #donatebtn a { 
   background-color:#0389d8;  /*How do I accomplish all this without the "!important"?*/
   color:white; 
+  width:48px;
 }
 
 #donatebtn:hover a { 
