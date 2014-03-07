@@ -1,4 +1,4 @@
----
+﻿---
 title: Partners
 layout: default
 ---
@@ -10,6 +10,6 @@ layout: default
 
 [Zangani](http://www.zangani.com/)
 
-[Associazione Italiana Per Lo Studio Del Dolore](http://www.aisd.it/​)
+[Associazione Italiana Per Lo Studio Del Dolore](http://www.aisd.it​)
 
 [Hult International Business School](http://www.hult.edu)
